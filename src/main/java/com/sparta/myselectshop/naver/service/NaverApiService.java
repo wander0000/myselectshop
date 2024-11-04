@@ -1,6 +1,9 @@
 package com.sparta.myselectshop.naver.service;
 
 
+import com.sparta.myselectshop.dto.ProductRequestDto;
+import com.sparta.myselectshop.dto.ProductResponseDto;
+import com.sparta.myselectshop.entity.Product;
 import com.sparta.myselectshop.naver.dto.ItemDto;
 import lombok.extern.slf4j.Slf4j;
 import org.json.JSONArray;
@@ -63,4 +66,6 @@ public class NaverApiService {
 
         return itemDtoList;
     }
+
+
 }
