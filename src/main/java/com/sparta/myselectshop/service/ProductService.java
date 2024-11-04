@@ -64,7 +64,7 @@ public class ProductService {
 //        }
 //        return responseDtoList;
 //    }
-
+    @Transactional(readOnly = true)//지연로딩을 위한(영속성컨텍스트가 필요하고) 트랜젝셔널, 성능을 위한 readOnly true
     public Page<ProductResponseDto> getProducts(User user,
                                                 int page, int size, String sortBy, boolean isAsc) {
         // 페이징 처리
